@@ -19,14 +19,16 @@
 
     <!-- Main Content Start -->
     <div class="row">
-      <div class="col-4 bg-primary">
+      <div class="col-4 bg-secondary p-0 m-0" style="height: 85vh;">
         <ul class="list-group">
-          <li><a class="list-group-item" href="#">Home</a></li>
-          <li><a class="list-group-item" href="#">Form</a></li>
-          <li><a class="list-group-item" href="#">About</a></li>
+          <li><a class="list-group-item pl-3" href="home.html" target="mycontent">Home</a></li>
+          <li><a class="list-group-item" href="form.html" target="mycontent">Form</a></li>
+          <li><a class="list-group-item" href="about.html" target="mycontent">About</a></li>
         </ul>
       </div>
-      <div class="col-8"><iframe width="100%" height="inherit" src="/hometask/index.html" frameborder="0"></iframe></div>
+      <div class="col-8" style="height: 85vh;">
+        <iframe name="mycontent" width="100%" style="height: 85vh;" src="home.html" frameborder="0"></iframe>
+      </div>
     </div>
     <!-- Main Content End -->
 
