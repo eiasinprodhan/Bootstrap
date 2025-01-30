@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,23 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         .wrapper {
             flex: 1;
             display: flex;
         }
+
         .sidebar {
             width: 200px;
             background: #f8f9fa;
             padding: 20px;
         }
+
         .content {
             flex-grow: 1;
             padding: 0px;
         }
+
         .footer {
             height: 5vh;
             background: #343a40;
@@ -32,17 +37,18 @@
             padding: 5px;
         }
 
-        iframe{
+        iframe {
             width: 100%;
             height: 100%;
         }
     </style>
 </head>
+
 <body>
     <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Black Spider</a>
+            <a class="navbar-brand" href="#"><h3>Black Spider</h3></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -55,32 +61,34 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Wrapper -->
     <div class="wrapper">
         <!-- Sidebar -->
-        <div class="sidebar bg-warning">
-            <h5>Sidebar</h5>
+        <div class="sidebar bg-dark">
+            <h5 class="text-light">Sidebar</h5>
             <ul class="nav flex-column">
-                <li class="nav-item"><a class="nav-link" href="home.html" target="mycontent">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="form.html" target="mycontent">Form</a></li>
-                <li class="nav-item"><a class="nav-link" href="table.html" target="mycontent">Table</a></li>
-                <li class="nav-item"><a class="nav-link" href="preodictable.html" target="mycontent">Preodic Table</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html" target="mycontent">About</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="home.html" target="mycontent">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="form.html" target="mycontent">Form</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="table.html" target="mycontent">Table</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="preodictable.html" target="mycontent">Preodic Table</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-light" href="about.html" target="mycontent">About</a></li>
             </ul>
         </div>
-        
+
         <!-- Main Content -->
         <div class="content">
             <iframe name="mycontent" src="home.html" frameborder="0"></iframe>
         </div>
     </div>
-    
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-warning text-dark">
         <p>Powered By &copy; Eiasin Prodhan</p>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
