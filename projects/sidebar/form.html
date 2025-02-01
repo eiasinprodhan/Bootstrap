@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style">
+  <title>Form</title>
+</head>
+
+<body>
+  <!-- Form Start -->
+  <div class="container-fluid bg-dark text-light">
+    <h3 class="text-center mb-5">Registration From</h3>
+    <form action="#">
+      <!-- 1st Row Start-->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">First Name <small class="text-danger">*</small></label>
+          <input class="form-control" type="text" placeholder="First Name" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Last Name <small class="text-danger">*</small></label>
+          <input class="form-control" type="text" placeholder="Last Name" required>
+        </div>
+      </div>
+      <!-- 1st Row End-->
+
+      <!-- 2nd Row Start-->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Email Address <small class="text-danger">*</small></label>
+          <input class="form-control" type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Password <small class="text-danger">*</small></label>
+          <input class="form-control" type="password" placeholder="Password" required>
+        </div>
+      </div>
+      <!-- 2nd Row End-->
+
+      <!-- 3rd Row Start-->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Gender <small class="text-danger">*</small></label>
+          <div class="form-check">
+            <input type="radio" name="gender" id=""> Male
+          </div>
+          <div class="form-check">
+            <input type="radio" name="gender" id=""> Female
+          </div>
+          <div class="form-check">
+            <input type="radio" name="gender" id=""> Others
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Hobbies <small class="text-danger">*</small></label>
+          <div class="form-check">
+            <input type="checkbox" name="" id=""> Coding
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="" id=""> Eating
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="" id=""> Travelling
+          </div>
+          <div class="form-check">
+            <input type="checkbox" name="" id=""> Sleeping
+          </div>
+        </div>
+      </div>
+      <!-- 3rd Row End-->
+
+      <!-- 4th Row Start-->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Subjects <small class="text-danger">*</small></label>
+          <select name="" class="form-select" id="" required>
+            <option value="" selected>--Select One--</option>
+            <option value="">Java</option>
+            <option value="">React</option>
+            <option value="">C#</option>
+            <option value="">Laravel</option>
+            <option value="">Database</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Nationality <small class="text-danger">*</small></label>
+          <input class="form-control" type="text" value="Bangladeshi" readonly required>
+        </div>
+      </div>
+
+      <!-- 4th Row End-->
+
+      <input type="submit" value="Save" class="btn btn-warning mb-5">
+      <input type="reset" value="Reset" class="btn btn-danger mb-5">
+
+    </form>
+  </div>
+  <!-- Form End -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
