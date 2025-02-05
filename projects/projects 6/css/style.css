@@ -1,0 +1,10 @@
+.bg-gray{
+    background-color: #d6d6d6;
+}
+
+.btn-rejavai{
+    background-color: pink;
+    border: 1px solid pink;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
