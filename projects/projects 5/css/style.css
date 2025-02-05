@@ -2,10 +2,10 @@
     background: #D1E7DD;
 }
 
-/* .up:hover{
+.up:hover{
     transform: translateY(-10px);
     transition: 1s ease;
-} */
+}
 
 .bg-yellow{
     background: #FFFADB;
