@@ -1,0 +1,5 @@
+.bg-image{
+    background-image: url(../images/Screenshot.png);
+    width: inherit;
+    background-repeat: no-repeat;
+}
