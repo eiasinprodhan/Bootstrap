@@ -1,16 +1,5 @@
 .bg-gray{
-    background-color: pink;
-}
-
-.text-pink{
-    color: pink;
-}
-
-.btn-rejavai{
-    background-color: pink;
-    border: 1px solid pink;
-    padding: 5px 10px;
-    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.534);
 }
 
 .image-hover{
