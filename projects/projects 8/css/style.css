@@ -1,6 +1,7 @@
 .up{
     animation: up 2s ease;
     position: absolute;
+    transition: 1s ease;
 }
 
 @keyframes up{
@@ -12,31 +13,7 @@
     }
 }
 
-
-.left{
-    animation: left 2s ease;
-    position: absolute;
-}
-
-@keyframes left{
-    0%{
-        transform: translateX(-100px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
-.zoom:hover{
-    animation: zoom 1s ease-in-out;
-}
-
-@keyframes zoom{
-    0%{
-        transform: scale(1);
-    }
-
-    100%{
-        transform: scale(1.5);
-    }
+.hoverUp:hover{
+    transform: translateY(-3px);
+    transition: 1s ease;
 }
