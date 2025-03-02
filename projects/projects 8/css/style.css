@@ -1,19 +1,37 @@
-.up{
+.up {
     animation: up 2s ease;
     position: absolute;
     transition: 1s ease;
 }
 
-@keyframes up{
-    0%{
+@keyframes up {
+    0% {
         transform: translateY(-100px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
 
-.hoverUp:hover{
+.hoverUp:hover {
     transform: translateY(-3px);
     transition: 1s ease;
+}
+
+.hero {
+    background: #18DADD;
+    background: linear-gradient(135deg, #18DADD, #A07F3B);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bg-navBar {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
