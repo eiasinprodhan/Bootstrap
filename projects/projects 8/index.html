@@ -6,10 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   <title>Black Spider</title>
 </head>
 
-<body>
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-md bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand text-light text-uppercase" href="#">Black Spider</a>
+      <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars-staggered text-light"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light link" aria-current="page" href="#"><i class="fa fa-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link" href="#"><i class="fa-solid fa-message"></i> Messages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link" href="#"><i class="fa-solid fa-user-group"></i> Friends</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light link" href="#"><i class="fa-solid fa-film"></i> Videos</a>
+          </li>
+        </ul>
+        <button class="btn btn-sm btn-primary mx-1">Sign Up <i class="fa-solid fa-user-plus"></i></button>
+        <button class="btn btn-sm btn-success mx-1">Sign In <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+      </div>
+    </div>
+  </nav>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
