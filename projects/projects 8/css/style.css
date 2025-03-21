@@ -5,3 +5,8 @@
 .link:hover{
     color: brown!important;
 }
+
+.dropdown-item:hover{
+    background: transparent!important;
+    color: brown!important;
+}
