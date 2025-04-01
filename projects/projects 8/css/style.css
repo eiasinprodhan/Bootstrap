@@ -13,34 +13,22 @@ body{
     color: #01fd9c;
 }
 
-.container{
-    width: 100%;
-}
 
 /* Navbar */
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
-    position: fixed;
-    width: 80%;
-}
 
 .navbar a{
     color: var(--text-color);
     text-decoration: none;
 }
 
-.navbarLogo{
+.navbar-brand{
     color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.navbarLogo::after{
+.navbar-brand::after{
     content: '.';
     color: var(--primary-color);
     font-size: 25px;
@@ -57,15 +45,14 @@ body{
     list-style: none;
 }
 
-.navbarMenu ul li{
-    display: inline-block;
+.nav-item .nav-link{
     margin: 0px 20px 0px 0px;
     font-size: 16px;
     position: relative;
     text-transform: uppercase;
 }
 
-.navbarMenu li a::after{
+.nav-item .nav-link::after{
     content: "";
     position: absolute;
     bottom: -5px;
@@ -73,17 +60,40 @@ body{
     width: 100%;
     left: 0;
     background: #01fd9c;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease-in-out;
     transform: scaleX(0);
+    border-radius: 25px;
 }
 
-.navbarMenu li:hover a::after{
+.nav-item .nav-link:hover::after{
+    color: var(--text-color);
     transform: scaleX(1);
+    box-shadow: 0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color),
+                0 0 100px var(--primary-color);
+}
+
+.nav-item a:hover{
+    color: var(--text-color)
+}
+
+.navbar a:hover{
+    color: var(--text-color)
+}
+
+.navbar-toggler{
+    color: var(--primary-color);
+    border: #01fd9c 1px solid;
+    outline-width: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
 
 
-.navbarButton button{
+.navbarButton{
     background: var(--primary-color);
     padding: 5px 20px;
     border-radius: 25px;
@@ -94,41 +104,14 @@ body{
     text-transform: uppercase;
 }
 
-.navbarButton button:hover{
-   box-shadow: 0 0 5px var(--primary-color);
-   transition: 0.3s ease-in-out;
+.navbarButton:hover{
+    box-shadow: 0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color),
+                0 0 100px var(--primary-color);
+    transition: 1s ease-in-out;
 }
 
 /* Hero */
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 200px;
-}
-
-.heroContent{
-    padding: 50px;
-
-}
-
-.heroContent p{
-    color: var(--text-color);
-    font-size: 15px;
-    margin: 0px;
-}
-
-.heroContent h1{
-    font-size: 35px;
-    margin: 0px;
-    word-spacing: 5px;
-    letter-spacing: 5px;
-}
-
-.heroContent h1:nth-child(1){
-    text-transform: uppercase;
-}
-
 .heroButtons{
     margin: 10px 0px;
 }
@@ -161,22 +144,27 @@ body{
 
 .heroButtons button:nth-child(1){
     border-radius: 25px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 15px;
+    font-weight: 600;
 }
 
 .heroButtons button:hover{
     background: var(--primary-color);
     color: var(--background-color);
     box-shadow: 0 0 5px var(--primary-color);
+    transition: 1s ease-in-out;
 }
 
 .circle{
     width: 370px;
     height: 370px;
     background: var(--background-color);
-    border-radius: 50%;
+    border-radius: 49% 51% 18% 82% / 61% 45% 55% 39%  ;
     border: var(--primary-color) solid 5px;
     position: relative;
-    animation: rotating 5s infinite;
+    animation: rotating alternate 3s infinite;
 }
 
 
@@ -188,12 +176,25 @@ body{
     }
 
     100%{
-        box-shadow: 0 0 5px var(--primary-color),
-    0 0 25px var(--primary-color),
-    0 0 50px var(--primary-color),
-    0 0 100px var(--primary-color);
+        box-shadow: 0 0 25px var(--primary-color),
+                    0 0 50px var(--primary-color),
+                    0 0 100px var(--primary-color),
+                    0 0 150px var(--primary-color);
     }
 }
+
+.circle img{
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+    border-radius: 49% 51% 18% 82% / 61% 45% 55% 39%  ;
+    width: 400px;
+}
+
+
+
+
+
 
 
   

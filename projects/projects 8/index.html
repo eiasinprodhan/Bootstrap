@@ -5,58 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>JS Animation</title>
+    <title>Eiasin Prodhan</title>
 </head>
 
 <body>
     <!-- Navbar Start -->
     <div class="container">
-        <header class="navbar">
-            <div class="navbarLogo">Eiasin Prodhan</div>
-            <div class="navbarMenus">
-                <div class="navbarMenu">
-                    <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
+        <nav class="navbar navbar-expand-lg rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand">Eiasin Prodhan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered navToggler"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testmonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="navbarButton">
-                    <button>Hire Me</button>
+                    <button class="navbarButton" type="submit">Hire Me</button>
                 </div>
             </div>
-        </header>
+        </nav>
     </div>
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
-    <section class="hero">
-        <div class="heroContent">
-            <p style="font-size: 10px;">Software Developer</p>
-            <h1 style="color: #FFFFFF;">Hello, I'm</h1>
-            <h1>Eiasin Prodhan</h1>
-            <p style="padding: 0px 200px 0px 0px;">I excel at crafting elegant digital expriences and I am proficient in
-                various programming languages and technologies.</p>
-            <div class="heroButtons">
-                <button><i class="fa-solid fa-download"></i>Download CV</button>
-                <button><i class="fa-brands fa-facebook"></i></button>
-                <button><i class="fa-brands fa-twitter"></i></button>
-                <button><i class="fa-brands fa-linkedin"></i></button>
-                <button><i class="fa-brands fa-github"></i></button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center flex-column order-md-1 order-2">
+                <h1 class="text-light text-uppercase">Hey, I'm</h1>
+                <h1 class="text-uppercase">Eiasin Prodhan</h1>
+                <p class="text-light text-align-justify">a software developer with a passion for
+                    transforming ideas into digital realities. I specialize in building robust, scalable, and
+                    user-friendly applications that solve real-world problems. From intuitive user interfaces to
+                    powerful back-end systems, I write clean, efficient code that brings visions to life.
+
+                <p class="text-light fw-bold">Let’s collaborate and build the next big
+                    thing — together.</p>
+                <div class="heroButtons">
+                    <button><i class="fa-solid fa-download"></i>Download CV</button>
+                    <button><i class="fa-brands fa-facebook"></i></button>
+                    <button><i class="fa-brands fa-twitter"></i></button>
+                    <button><i class="fa-brands fa-linkedin"></i></button>
+                    <button><i class="fa-brands fa-github"></i></button>
+                </div>
+            </div>
+            <div class="col-md-6 my-5 py-5 d-flex justify-content-center align-items-center order-md-2 order-1">
+                <div class="circle">
+                    <img src="images/Picsart_25-04-01_15-15-33-702.png" alt="">
+                </div>
             </div>
         </div>
-        <div class="heroImage">
-            <div class="circle">
-                <center>
-                    <img style="position: absolute; bottom: 0px; left: 0px;" width="350px" src="images/1743490374705.png" alt="">
-                </center>
-            </div>
-        </div>
-    </section>
+    </div>
     <!-- Hero Section End -->
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
