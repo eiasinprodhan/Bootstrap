@@ -1,57 +1,199 @@
-.logo{
-    width: 200px;
+:root{
+    --primary-color:#01fd9c;
+    --background-color: #1c1b22;
+    --text-color: #fcfcfd;
 }
 
-.link:hover{
-    color: brown!important;
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-.dropdown-item:hover{
-    background: transparent!important;
-    color: brown!important;
+body{
+    background: var(--background-color);
+    color: #01fd9c;
 }
 
+.container{
+    width: 100%;
+}
 
-@keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .gradient {
-    --size: 750px;
-    --speed: 50s;
-    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-  
-    width: var(--size);
-    height: var(--size);
-    filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(hsl(222, 84, 60, 100%), hsl(164, 79, 71));
-    animation: rotate var(--speed) var(--easing) alternate infinite;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  }
-  
-  @media (min-width: 720px) {
-    .gradient {
-      --size: 500px;
-    }
-  }
-  
-  body {
-    background-color: #071c39;
-    position: absolute;
-    inset: 0;
+/* Navbar */
+
+.navbar{
     display: flex;
-    place-content: center;
+    justify-content: space-between;
     align-items: center;
-    overflow: hidden;
-  }
-  
-  /* This is just to transition when you change the viewport size. */
-  * {
-    transition: all 0.5s ease-out;
-  }
+    padding: 10px 200px;
+    position: fixed;
+    width: 80%;
+}
+
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbarLogo{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbarLogo::after{
+    content: '.';
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.navbarMenus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbarMenu ul{
+    list-style: none;
+}
+
+.navbarMenu ul li{
+    display: inline-block;
+    margin: 0px 20px 0px 0px;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.navbarMenu li a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    background: #01fd9c;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+.navbarMenu li:hover a::after{
+    transform: scaleX(1);
+}
+
+
+
+.navbarButton button{
+    background: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--primary-color);
+    color: var(--background-color);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbarButton button:hover{
+   box-shadow: 0 0 5px var(--primary-color);
+   transition: 0.3s ease-in-out;
+}
+
+/* Hero */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200px;
+}
+
+.heroContent{
+    padding: 50px;
+
+}
+
+.heroContent p{
+    color: var(--text-color);
+    font-size: 15px;
+    margin: 0px;
+}
+
+.heroContent h1{
+    font-size: 35px;
+    margin: 0px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+.heroContent h1:nth-child(1){
+    text-transform: uppercase;
+}
+
+.heroButtons{
+    margin: 10px 0px;
+}
+
+.heroButtons i{
+   font-size: 18px;
+}
+
+.heroButtons button{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #1c1b22;
+    color: #fcfcfd;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    height: 60px 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 0px 5px 0px 0px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.heroButtons button i{
+    margin: 5px 5px;
+}
+
+.heroButtons button:nth-child(1){
+    border-radius: 25px;
+}
+
+.heroButtons button:hover{
+    background: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.circle{
+    width: 370px;
+    height: 370px;
+    background: var(--background-color);
+    border-radius: 50%;
+    border: var(--primary-color) solid 5px;
+    position: relative;
+    animation: rotating 5s infinite;
+}
+
+
+@keyframes rotating{
+    0%{
+        box-shadow: 0 0 5px var(--primary-color),
+        0 0 25px var(--primary-color),
+        0 0 50px var(--primary-color);
+    }
+
+    100%{
+        box-shadow: 0 0 5px var(--primary-color),
+    0 0 25px var(--primary-color),
+    0 0 50px var(--primary-color),
+    0 0 100px var(--primary-color);
+    }
+}
+
+
   
