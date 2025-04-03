@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,11 +18,14 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand">Eiasin Prodhan</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars-staggered navToggler"></i>
-                    </button>
+                    <div class="navbarToggler">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars-staggered hello"></i>
+                            <i class="fa-solid fa-xmark hi"></i>
+                        </button>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -63,11 +67,21 @@
                 <p class="text-light fw-bold">Let’s collaborate and build the next big
                     thing — together.</p>
                 <div class="heroButtons">
-                    <button><i class="fa-solid fa-download"></i>Download CV</button>
-                    <button><i class="fa-brands fa-facebook"></i></button>
-                    <button><i class="fa-brands fa-twitter"></i></button>
-                    <button><i class="fa-brands fa-linkedin"></i></button>
-                    <button><i class="fa-brands fa-github"></i></button>
+                    <a href="#">
+                        <i class="fa-solid fa-download"></i>Download CV
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/eiasinprodhan">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-6 my-5 py-5 d-flex justify-content-center align-items-center order-lg-2 order-1">
@@ -387,13 +401,13 @@
                         <button><i class="fa-brands fa-github"></i></button>
                     </div>
                 </div>
-                <div class="col-lg-4 ">
+                <div class="col-lg-4 mb-5">
                     <h6 class="text-light text-uppercase">Stay Up To Date</h6>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2 rounded border-green" type="subscribe"
                             placeholder="Subscribe Now" aria-label="Subscribe">
                         <button class="subscribe" type="submit">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-envelope-circle-check"></i>
                         </button>
                     </form>
                 </div>
@@ -403,7 +417,8 @@
     <!-- Footer End -->
 
     <!-- Button Start -->
-    <button onclick="location.href='#home'" class="btn position-fixed bottom-0 end-0 m-3 rounded-circle py-1.5 px-2.5 shadow" style="background: #01fd9c; color: #1c1b22;">
+    <button onclick="location.href='#home'"
+        class="btn position-fixed bottom-0 end-0 m-3 rounded-circle py-1.5 px-2.5 shadow scroller">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
     <!-- Button End -->
