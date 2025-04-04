@@ -1,0 +1,13 @@
+.bg-gray{
+    background-color: rgba(128, 128, 128, 0.534);
+}
+
+.image-hover{
+    filter: grayscale(100%);
+}
+
+.image-hover:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
